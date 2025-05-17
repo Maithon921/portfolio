@@ -8,7 +8,7 @@ function ProjectCard({ project }) {
       <img
         src={project.img}
         alt={`${project.title} image`}
-        className="shadow-[0_2px_8px_rgba(59,130,246,0.1)] md:h-1/2 "
+        className="shadow-[0_2px_8px_rgba(59,130,246,0.1)] hover:scale-101 transition-all duration-500 "
       />
       <div className="px-4 py-2">
         <h3 className="text-xl font-bold mb-2">{project.title}</h3>

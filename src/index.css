@@ -11,6 +11,25 @@ body {
 
 @layer utilities {
 
+  .animate-typing{
+    animation: typing 3s steps(22) forwards, cursor 1s step-end infinite;
+  }
+
+  @keyframes typing {
+    from{
+      width: 0;
+    }
+    to{
+      width: 91%;
+    }
+  }
+
+  @keyframes cursor {
+    50%{
+      border-color: transparent;
+    }
+  }
+
   @keyframes blink {
     0%, 100% {
       opacity: 1;

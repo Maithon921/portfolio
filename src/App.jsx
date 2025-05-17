@@ -23,7 +23,7 @@ function App() {
       >
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-        <Home />
+        <Home isLoaded={isLoaded}/>
         <About />
         <Projects />
         <Contact />
