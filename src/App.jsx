@@ -9,6 +9,7 @@ import About from "./components/sections/About.jsx";
 import Projects from "./components/sections/Projects.jsx";
 import Contact from "./components/sections/Contact.jsx";
 import Education from "./components/sections/Education.jsx";
+import Certificate from "./components/sections/Certificate.jsx";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -28,6 +29,7 @@ function App() {
         <About />
         <Projects />
         <Education />
+        <Certificate/>
         <Contact />
       </div>
     </>

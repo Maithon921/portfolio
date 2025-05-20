@@ -24,7 +24,7 @@ const Home = ({ isLoaded }) => {
               <h1
                 className={`text-blue-500 ${
                   isLoaded
-                    ? "border-r-2 overflow-hidden whitespace-nowrap  animate-typing border-blue-500"
+                    ? "border-r-2 overflow-hidden whitespace-nowrap animate-typing border-blue-500"
                     : ""
                 }`}
               >
@@ -39,7 +39,7 @@ const Home = ({ isLoaded }) => {
               building seamless user experiences with clean code and real-world
               performance <Sparkles className="inline-block text-blue-400" />.
             </div>
-            <div className="flex justify-center gap-10 flex-wrap">
+            <div className="flex justify-center gap-5 md:gap-10 flex-wrap">
               <a
                 href="#project"
                 className=" flex justify-center items-center bg-blue-500 text-white py-2 md:py-1 px-3 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] "
