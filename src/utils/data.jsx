@@ -366,38 +366,38 @@ export const timeline = [
 
 export const certificateData = [
   {
-    id:1,
+    id: 1,
     image: NSDC,
-    link: "https://drive.google.com/file/d/1t2VfVDK0D36FP6nxJu85q8MlkCIYJzRU/view?usp=sharing"
+    link: "https://drive.google.com/file/d/1t2VfVDK0D36FP6nxJu85q8MlkCIYJzRU/view?usp=sharing",
   },
   {
-    id:2,
-    image:FullStack,
-    link: "https://trainings.internshala.com/verify-certificate/?certificate_number=iwk2h9i4ub8"
+    id: 2,
+    image: FullStack,
+    link: "https://trainings.internshala.com/verify-certificate/?certificate_number=iwk2h9i4ub8",
   },
   {
-    id:3,
+    id: 3,
     image: Javascript,
-    link: "https://trainings.internshala.com/verify-certificate/?certificate_number=ldx547o0ze_"
+    link: "https://trainings.internshala.com/verify-certificate/?certificate_number=ldx547o0ze_",
   },
   {
-    id:4,
+    id: 4,
     image: Html,
-    link: "https://trainings.internshala.com/verify-certificate/?certificate_number=8x7c6c1rdja"
+    link: "https://trainings.internshala.com/verify-certificate/?certificate_number=8x7c6c1rdja",
   },
   {
-    id:5,
+    id: 5,
     image: Mongo,
-    link: "https://trainings.internshala.com/verify-certificate/?certificate_number=9hu4w7t3m4a"
+    link: "https://trainings.internshala.com/verify-certificate/?certificate_number=9hu4w7t3m4a",
   },
   {
-    id:6,
+    id: 6,
     image: React,
-    link: "https://trainings.internshala.com/verify-certificate/?certificate_number=7a9wabrwl9d"
+    link: "https://trainings.internshala.com/verify-certificate/?certificate_number=7a9wabrwl9d",
   },
   {
-    id:7,
+    id: 7,
     image: Github,
-    link: "https://trainings.internshala.com/verify-certificate/?certificate_number=bu1wyab2hoh"
+    link: "https://trainings.internshala.com/verify-certificate/?certificate_number=bu1wyab2hoh",
   },
 ];

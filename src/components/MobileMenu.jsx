@@ -1,7 +1,9 @@
+import { SunMediumIcon } from "lucide-react";
+
 const MobileMenu = ({ menuOpen, setMenuOpen }) => {
   return (
     <nav
-      className={`fixed top-0 left-0 w-full bg-[rgba(10,10,10,0.8)] z-40 flex flex-col justify-center items-center transition-all duration-300 ease-in-out ${
+      className={`fixed top-0 left-0 w-full bg-[rgba(10,10,10,0.9)] z-40 flex flex-col justify-center items-center transition-all duration-300 ease-in-out ${
         menuOpen
           ? "h-screen opacity-100 pointer-events-auto"
           : "h-0 opacity-0 pointer-events-none"
@@ -15,6 +17,13 @@ const MobileMenu = ({ menuOpen, setMenuOpen }) => {
         &times;
       </button>
 
+      <button
+        onClick={() => setMenuOpen(false)}
+        className={` text-white my-4 transform transition-transform duration-300  `}
+      >
+        <SunMediumIcon size={40} />
+      </button>
+
       <a
         href="#home"
         onClick={() => setMenuOpen(false)}
@@ -24,6 +33,7 @@ const MobileMenu = ({ menuOpen, setMenuOpen }) => {
       >
         Home
       </a>
+
       <a
         href="#about"
         onClick={() => setMenuOpen(false)}
@@ -54,6 +64,5 @@ const MobileMenu = ({ menuOpen, setMenuOpen }) => {
     </nav>
   );
 };
-
 
 export default MobileMenu;

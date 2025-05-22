@@ -1,4 +1,3 @@
-import { RevealOnScroll } from "../RevealOnScroll.jsx";
 import meDarker from "../../assets/meDarker.png";
 import {
   ArrowDownIcon,
@@ -14,11 +13,15 @@ const Home = ({ isLoaded }) => {
       id="home"
       className="min-h-screen flex items-center justify-center relative"
     >
-      <RevealOnScroll>
+      <div>
         <div className="grid grid-cols-1 md:grid-cols-2 items-center mt-20">
-          <div className="text-start z-10 px-4 flex flex-col justify-center space-y-6 sm:space-y-10">
-            <div className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-wide  ">
-              <p className="text-base md:text-xl font-mono text-white text-shadow-sm text-shadow-blue-400 mb-3 ">
+          <div
+            className="text-start z-10 px-4 flex flex-col justify-center space-y-6 sm:space-y-10"
+            data-aos="slide-right"
+            data-aos-delay="100"
+          >
+            <div className="text-xl sm:text-3xl md:text-2xl lg:text-3xl xl:text-4xl font-extrabold tracking-wide ">
+              <p className="text-sm md:text-xl font-mono text-white text-shadow-sm text-shadow-blue-400 mb-3">
                 Hello, I'm
               </p>
               <h1
@@ -32,14 +35,19 @@ const Home = ({ isLoaded }) => {
               </h1>
             </div>
             <div className="text-gray-400 text-base max-w-lg ">
-              <p className="text-blue-400 pr-1 text-lg  font-semibold tracking-widest">
-                MERN Stack Developer <Laptop2 className="inline-block mb-2" />
+              <p className="text-blue-400 text-sm md:text-lg  font-semibold tracking-widest">
+                Future MERN Stack Developer{" "}
+                <Laptop2 className="inline-block mb-2" />
               </p>
-              I craft fast, reliable, and scalable web apps focussed on
-              building seamless user experiences with clean code and real-world
+              I craft fast, reliable, and scalable web apps focussed on building
+              seamless user experiences with clean code and real-world
               performance <Sparkles className="inline-block text-blue-400" />.
             </div>
-            <div className="flex justify-center gap-5 md:gap-10 flex-wrap">
+            <div
+              className="flex justify-center items-center gap-5 md:gap-10 flex-wrap mb-10"
+              data-aos="slide-up"
+              data-aos-delay="100"
+            >
               <a
                 href="#project"
                 className=" flex justify-center items-center bg-blue-500 text-white py-2 md:py-1 px-3 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] "
@@ -53,7 +61,7 @@ const Home = ({ isLoaded }) => {
                 Contact Me
               </a>
 
-              <div className=" flex justify-evenly items-center mb-10 md:my-0 gap-3">
+              <div className=" flex justify-evenly items-center  sm:my-0 gap-3 ">
                 <a
                   href=""
                   className="bg-blue-500/10 text-blue-500 py-3 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition hover:-translate-y-0.5"
@@ -62,14 +70,18 @@ const Home = ({ isLoaded }) => {
                 </a>
                 <a
                   href=""
-                  className="bg-blue-500/10 text-blue-500 py-3 px-3   rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition hover:-translate-y-0.5"
+                  className="bg-blue-500/10 text-blue-500 py-3 px-3  rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition hover:-translate-y-0.5"
                 >
                   <GithubIcon />
                 </a>
               </div>
             </div>
           </div>
-          <div className="flex justify-center px-4">
+          <div
+            className="flex justify-center px-4"
+            data-aos="slide-left"
+            data-aos-delay="100"
+          >
             <div className="w-full max-w-md flex justify-center items-center bg-white/40 rounded-full shadow-[0_0_20px_rgba(59,130,246,0.8)]">
               <img
                 src={meDarker}
@@ -85,7 +97,7 @@ const Home = ({ isLoaded }) => {
         >
           <ArrowDownIcon className="text-blue-500 animate-bounce" size={30} />
         </a>
-      </RevealOnScroll>
+      </div>
     </section>
   );
 };

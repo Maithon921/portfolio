@@ -1,10 +1,14 @@
 import { useState } from "react";
 
-function ProjectCard({ project }) {
+function ProjectCard({ project, index }) {
   const [seeMore, setSeeMore] = useState(false);
 
   return (
-    <div className=" rounded-xl border border-white/10 hover:translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all overflow-hidden">
+    <div
+      className=" rounded-xl border border-white/10 hover:translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all overflow-hidden"
+      data-aos={`${index % 2 === 0 ? "fade-right" : "fade-left"}`}
+      data-aos-delay={index * 100}
+    >
       <img
         src={project.img}
         alt={`${project.title} image`}

@@ -32,18 +32,26 @@ function Certificate() {
   return (
     <section className="min-h-screen flex items-center justify-center px-2 py-10 md:py-20">
       <div className="max-w-4xl w-full mx-auto relative">
-        <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
+        <h2
+          className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center"
+          data-aos="zoom-out"
+          data-aos-delay="100"
+        >
           Certificates
         </h2>
 
         {/* Arrows */}
         <button
+          data-aos="fade-right"
+          data-aos-delay="100"
           className="absolute left-0 top-1/2  z-10 p-1 rounded-full shadow"
           onClick={handlePrev}
         >
           <ChevronLeft className="w-6 h-6 text-blue-500 cursor-pointer" />
         </button>
         <button
+          data-aos="fade-left"
+          data-aos-delay="100"
           className="absolute right-0 top-1/2 z-10 p-1 rounded-full shadow"
           onClick={handleNext}
         >
@@ -54,6 +62,8 @@ function Certificate() {
         <div
           ref={scrollRef}
           className="flex overflow-hidden scroll-smooth transition-all duration-300"
+          data-aos="slide-up"
+          data-aos-delay="100"
         >
           {certificateData.map((data) => (
             <div

@@ -7,12 +7,21 @@ function Education() {
       id="education"
     >
       <div className="max-w-5xl mx-auto px-3">
-        <h1 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
+        <h1
+          className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center"
+          data-aos="zoom-out"
+          data-aos-delay="100"
+        >
           Education
         </h1>
         <div>
           {timeline.map((edu, index) => (
-            <div key={edu.id} className="relative pl-8 pb-10">
+            <div
+              key={edu.id}
+              className="relative pl-8 pb-10"
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+            >
               <div className="absolute left-0 top-2 overflow-hidden h-7 w-7 rounded-full bg-blue-500/40 p-0.5 text-gray-400 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)]">
                 {edu.icon}
               </div>
@@ -29,9 +38,7 @@ function Education() {
                   </p>
                 </div>
                 <p className="text-sm"> {edu.date} </p>
-                <p className="text-sm mb-2 text-gray-500">
-                  {edu.description}
-                </p>
+                <p className="text-sm mb-2 text-gray-500">{edu.description}</p>
               </div>
             </div>
           ))}
