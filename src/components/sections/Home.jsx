@@ -21,7 +21,7 @@ const Home = ({ isLoaded }) => {
             data-aos-delay="100"
           >
             <div className="text-xl sm:text-3xl md:text-2xl lg:text-3xl xl:text-4xl font-extrabold tracking-wide ">
-              <p className="text-sm md:text-xl font-mono text-white text-shadow-sm text-shadow-blue-400 mb-3">
+              <p className="text-sm md:text-xl font-mono text-blue-500 dark:text-white text-shadow-sm text-shadow-blue-400 mb-3">
                 Hello, I'm
               </p>
               <h1
